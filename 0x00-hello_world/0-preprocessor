@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Define the input C file and output file
+CFILE="main.c"
+OUTPUT_FILE="output.c"
+
+# Run the C file through the preprocessor and save the result to the output file
+gcc -E "$CFILE" -o "$OUTPUT_FILE"
+
+echo "C file processed and saved to $OUTPUT_FILE"
